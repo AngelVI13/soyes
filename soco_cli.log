@@ -1,0 +1,221 @@
+D:\Documents\shared\soco-cli>py -3.8 -m soco_cli --log DEBUG Kitchen play_file "C:\Users\angel.iliev\Music\Bagara - Live @ Radio Intense 23.12.2022 Melodic Techno & Progressive House DJ Mix 4K.mp3"
+2023-03-25 14:43:19,679 sonos.py:130 - main() - Setting up handlers for: [<Signals.SIGINT: 2>, <Signals.SIGTERM: 15>]
+2023-03-25 14:43:19,679 sonos.py:244 - main() - No 'SPKR' environment variable set
+2023-03-25 14:43:19,680 sonos.py:267 - main() - Found 1 action sequence(s): [['Kitchen', 'play_file', 'C:\\Users\\angel.iliev\\Music\\Bagara - Live @ Radio Intense 23.12.2022 Melodic Techno & Progressive House DJ Mix 4K.mp3']]
+2023-03-25 14:43:19,688 utils.py:590 - get_speaker() - Trying direct cache lookup
+2023-03-25 14:43:19,688 utils.py:593 - get_speaker() - Trying indirect cache lookup
+2023-03-25 14:43:19,689 utils.py:596 - get_speaker() - Trying standard discovery with network scan fallback
+2023-03-25 14:43:19,701 discovery.py:690 - _find_ipv4_addresses() - Set of attached IPs: {'192.168.1.114', '192.168.56.1', '192.168.20.1', '192.168.85.1'}
+2023-03-25 14:43:19,701 discovery.py:114 - discover() - Sending discovery packets on discovered interface(s) {'192.168.1.114', '192.168.56.1', '192.168.20.1', '192.168.85.1'}
+2023-03-25 14:43:19,702 discovery.py:122 - discover() - Created socket <socket.socket fd=720, family=AddressFamily.AF_INET, type=SocketKind.SOCK_DGRAM, proto=17> for 192.168.1.114
+2023-03-25 14:43:19,709 discovery.py:122 - discover() - Created socket <socket.socket fd=716, family=AddressFamily.AF_INET, type=SocketKind.SOCK_DGRAM, proto=17> for 192.168.56.1
+2023-03-25 14:43:19,717 discovery.py:122 - discover() - Created socket <socket.socket fd=724, family=AddressFamily.AF_INET, type=SocketKind.SOCK_DGRAM, proto=17> for 192.168.20.1
+2023-03-25 14:43:19,718 discovery.py:122 - discover() - Created socket <socket.socket fd=728, family=AddressFamily.AF_INET, type=SocketKind.SOCK_DGRAM, proto=17> for 192.168.85.1
+2023-03-25 14:43:19,718 discovery.py:134 - discover() - Sending discovery packet on <socket.socket fd=720, family=AddressFamily.AF_INET, type=SocketKind.SOCK_DGRAM, proto=17>
+2023-03-25 14:43:19,719 discovery.py:134 - discover() - Sending discovery packet on <socket.socket fd=716, family=AddressFamily.AF_INET, type=SocketKind.SOCK_DGRAM, proto=17>
+2023-03-25 14:43:19,719 discovery.py:134 - discover() - Sending discovery packet on <socket.socket fd=724, family=AddressFamily.AF_INET, type=SocketKind.SOCK_DGRAM, proto=17>
+2023-03-25 14:43:19,720 discovery.py:134 - discover() - Sending discovery packet on <socket.socket fd=728, family=AddressFamily.AF_INET, type=SocketKind.SOCK_DGRAM, proto=17>
+2023-03-25 14:43:19,720 discovery.py:134 - discover() - Sending discovery packet on <socket.socket fd=720, family=AddressFamily.AF_INET, type=SocketKind.SOCK_DGRAM, proto=17, laddr=('0.0.0.0', 57109)>
+2023-03-25 14:43:19,721 discovery.py:134 - discover() - Sending discovery packet on <socket.socket fd=716, family=AddressFamily.AF_INET, type=SocketKind.SOCK_DGRAM, proto=17, laddr=('0.0.0.0', 57110)>
+2023-03-25 14:43:19,721 discovery.py:134 - discover() - Sending discovery packet on <socket.socket fd=724, family=AddressFamily.AF_INET, type=SocketKind.SOCK_DGRAM, proto=17, laddr=('0.0.0.0', 57111)>
+2023-03-25 14:43:19,721 discovery.py:134 - discover() - Sending discovery packet on <socket.socket fd=728, family=AddressFamily.AF_INET, type=SocketKind.SOCK_DGRAM, proto=17, laddr=('0.0.0.0', 57112)>
+2023-03-25 14:43:19,722 discovery.py:134 - discover() - Sending discovery packet on <socket.socket fd=720, family=AddressFamily.AF_INET, type=SocketKind.SOCK_DGRAM, proto=17, laddr=('0.0.0.0', 57109)>
+2023-03-25 14:43:19,722 discovery.py:134 - discover() - Sending discovery packet on <socket.socket fd=716, family=AddressFamily.AF_INET, type=SocketKind.SOCK_DGRAM, proto=17, laddr=('0.0.0.0', 57110)>
+2023-03-25 14:43:19,722 discovery.py:134 - discover() - Sending discovery packet on <socket.socket fd=724, family=AddressFamily.AF_INET, type=SocketKind.SOCK_DGRAM, proto=17, laddr=('0.0.0.0', 57111)>
+2023-03-25 14:43:19,722 discovery.py:134 - discover() - Sending discovery packet on <socket.socket fd=728, family=AddressFamily.AF_INET, type=SocketKind.SOCK_DGRAM, proto=17, laddr=('0.0.0.0', 57112)>
+2023-03-25 14:43:19,872 discovery.py:194 - discover() - Received discovery response from ('192.168.1.134', 41430): "b'HTTP/1.1 200 OK\r\nCACHE-CONTROL: max-age = 1800\r\nEXT:\r\nLOCATION: http://192.168.1.134:1400/xml/device_description.xml\r\nSERVER: Linux UPnP/1.0 Sonos/71.1-38240 (ZPS12)\r\nST: urn:schemas-upnp-org:device:ZonePlayer:1\r\nUSN: uuid:RINCON_949F3E7F9C5201400::urn:schemas-upnp-org:device:ZonePlayer:1\r\nX-RINCON-HOUSEHOLD: Sonos_T8I0ro5S4v5sOmByx9sj3flNXz\r\nX-RINCON-BOOTSEQ: 159\r\nBOOTID.UPNP.ORG: 159\r\nX-RINCON-WIFIMODE: 1\r\nX-RINCON-VARIANT: 1\r\nHOUSEHOLD.SMARTSPEAKER.AUDIO: Sonos_T8I0ro5S4v5sOmByx9sj3flNXz.UOgbbiZl37Wbehs9Ekzc\r\nSECURELOCATION.UPNP.ORG: https://192.168.1.134:1443/xml/device_description.xml\r\nX-SONOS-HHSECURELOCATION: https://192.168.1.134:1843/xml/device_description.xml\r\n\r\n'"
+2023-03-25 14:43:19,872 core.py:372 - __init__() - Created SoCo instance for ip: 192.168.1.134
+2023-03-25 14:43:19,875 discovery.py:150 - close_sockets() - Closing socket <socket.socket fd=720, family=AddressFamily.AF_INET, type=SocketKind.SOCK_DGRAM, proto=17, laddr=('0.0.0.0', 57109)>
+2023-03-25 14:43:19,881 discovery.py:150 - close_sockets() - Closing socket <socket.socket fd=716, family=AddressFamily.AF_INET, type=SocketKind.SOCK_DGRAM, proto=17, laddr=('0.0.0.0', 57110)>
+2023-03-25 14:43:19,881 discovery.py:150 - close_sockets() - Closing socket <socket.socket fd=724, family=AddressFamily.AF_INET, type=SocketKind.SOCK_DGRAM, proto=17, laddr=('0.0.0.0', 57111)>
+2023-03-25 14:43:19,882 discovery.py:150 - close_sockets() - Closing socket <socket.socket fd=728, family=AddressFamily.AF_INET, type=SocketKind.SOCK_DGRAM, proto=17, laddr=('0.0.0.0', 57112)>
+2023-03-25 14:43:19,882 services.py:220 - __getattr__() - Dispatching method GetHouseholdID
+2023-03-25 14:43:19,883 services.py:470 - send_command() - Request timeout set to 20.0
+2023-03-25 14:43:19,885 connectionpool.py:228 - _new_conn() - Starting new HTTP connection (1): 192.168.1.134:1400
+2023-03-25 14:43:19,903 connectionpool.py:456 - _make_request() - http://192.168.1.134:1400 "GET /xml/DeviceProperties1.xml HTTP/1.1" 200 21986
+2023-03-25 14:43:19,934 services.py:483 - send_command() - Sending GetHouseholdID [] to 192.168.1.134
+2023-03-25 14:43:19,940 services.py:484 - send_command() - Sending {'Content-Type': 'text/xml; charset="utf-8"', 'SOAPACTION': 'urn:schemas-upnp-org:service:DeviceProperties:1#GetHouseholdID'}, <?xml version="1.0" ?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+  <s:Body>
+    <u:GetHouseholdID xmlns:u="urn:schemas-upnp-org:service:DeviceProperties:1"/>
+  </s:Body>
+</s:Envelope>
+
+2023-03-25 14:43:19,942 connectionpool.py:228 - _new_conn() - Starting new HTTP connection (1): 192.168.1.134:1400
+2023-03-25 14:43:19,953 connectionpool.py:456 - _make_request() - http://192.168.1.134:1400 "POST /DeviceProperties/Control HTTP/1.1" 200 338
+2023-03-25 14:43:19,954 services.py:493 - send_command() - Received {'CONTENT-LENGTH': '338', 'CONTENT-TYPE': 'text/xml; charset="utf-8"', 'EXT': '', 'Server': 'Linux UPnP/1.0 Sonos/71.1-38240 (ZPS12)', 'Connection': 'close'}, <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:GetHouseholdIDResponse xmlns:u="urn:schemas-upnp-org:service:DeviceProperties:1"><CurrentHouseholdID>Sonos_T8I0ro5S4v5sOmByx9sj3flNXz</CurrentHouseholdID></u:GetHouseholdIDResponse></s:Body></s:Envelope>
+2023-03-25 14:43:19,954 services.py:495 - send_command() - Received status 200 from 192.168.1.134
+2023-03-25 14:43:19,955 services.py:220 - __getattr__() - Dispatching method GetZoneGroupState
+2023-03-25 14:43:19,955 services.py:470 - send_command() - Request timeout set to 20.0
+2023-03-25 14:43:19,956 connectionpool.py:228 - _new_conn() - Starting new HTTP connection (1): 192.168.1.134:1400
+2023-03-25 14:43:19,964 connectionpool.py:456 - _make_request() - http://192.168.1.134:1400 "GET /xml/ZoneGroupTopology1.xml HTTP/1.1" 200 8661
+2023-03-25 14:43:19,970 services.py:483 - send_command() - Sending GetZoneGroupState [] to 192.168.1.134
+2023-03-25 14:43:19,970 services.py:484 - send_command() - Sending {'Content-Type': 'text/xml; charset="utf-8"', 'SOAPACTION': 'urn:schemas-upnp-org:service:ZoneGroupTopology:1#GetZoneGroupState'}, <?xml version="1.0" ?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+  <s:Body>
+    <u:GetZoneGroupState xmlns:u="urn:schemas-upnp-org:service:ZoneGroupTopology:1"/>
+  </s:Body>
+</s:Envelope>
+
+2023-03-25 14:43:19,971 connectionpool.py:228 - _new_conn() - Starting new HTTP connection (1): 192.168.1.134:1400
+2023-03-25 14:43:19,986 connectionpool.py:456 - _make_request() - http://192.168.1.134:1400 "POST /ZoneGroupTopology/Control HTTP/1.1" 200 2546
+2023-03-25 14:43:19,989 services.py:493 - send_command() - Received {'CONTENT-LENGTH': '2546', 'CONTENT-TYPE': 'text/xml; charset="utf-8"', 'EXT': '', 'Server': 'Linux UPnP/1.0 Sonos/71.1-38240 (ZPS12)', 'Connection': 'close'}, <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:GetZoneGroupStateResponse xmlns:u="urn:schemas-upnp-org:service:ZoneGroupTopology:1"><ZoneGroupState>&lt;ZoneGroupState&gt;&lt;ZoneGroups&gt;&lt;ZoneGroup Coordinator=&quot;RINCON_949F3E7F9C5201400&quot; ID=&quot;RINCON_949F3E7F9C5201400:2286320319&quot;&gt;&lt;ZoneGroupMember UUID=&quot;RINCON_949F3E7F9C5201400&quot; Location=&quot;http://192.168.1.134:1400/xml/device_description.xml&quot; ZoneName=&quot;Kitchen&quot; Icon=&quot;x-rincon-roomicon:kitchen&quot; Configuration=&quot;1&quot; SoftwareVersion=&quot;71.1-38240&quot; SWGen=&quot;2&quot; MinCompatibleVersion=&quot;70.0-00000&quot; LegacyCompatibleVersion=&quot;58.0-00000&quot; BootSeq=&quot;159&quot; TVConfigurationError=&quot;0&quot; HdmiCecAvailable=&quot;0&quot; WirelessMode=&quot;1&quot; WirelessLeafOnly=&quot;0&quot; ChannelFreq=&quot;2412&quot; BehindWifiExtender=&quot;0&quot; WifiEnabled=&quot;1&quot; EthLink=&quot;0&quot; Orientation=&quot;0&quot; RoomCalibrationState=&quot;4&quot; SecureRegState=&quot;3&quot; VoiceConfigState=&quot;0&quot; MicEnabled=&quot;0&quot; AirPlayEnabled=&quot;0&quot; IdleState=&quot;1&quot; MoreInfo=&quot;&quot; SSLPort=&quot;1443&quot; HHSSLPort=&quot;1843&quot;/&gt;&lt;/ZoneGroup&gt;&lt;ZoneGroup Coordinator=&quot;RINCON_5CAAFDFA79DC01400&quot; ID=&quot;RINCON_5CAAFDFA79DC01400:67127424&quot;&gt;&lt;ZoneGroupMember UUID=&quot;RINCON_5CAAFDFA79DC01400&quot; Location=&quot;http://192.168.1.152:1400/xml/device_description.xml&quot; ZoneName=&quot;Living room&quot; Icon=&quot;x-rincon-roomicon:living&quot; Configuration=&quot;1&quot; SoftwareVersion=&quot;71.1-38240&quot; SWGen=&quot;2&quot; MinCompatibleVersion=&quot;70.0-00000&quot; LegacyCompatibleVersion=&quot;58.0-00000&quot; BootSeq=&quot;99&quot; TVConfigurationError=&quot;0&quot; HdmiCecAvailable=&quot;0&quot; WirelessMode=&quot;1&quot; WirelessLeafOnly=&quot;0&quot; ChannelFreq=&quot;2412&quot; BehindWifiExtender=&quot;0&quot; WifiEnabled=&quot;1&quot; EthLink=&quot;0&quot; Orientation=&quot;0&quot; RoomCalibrationState=&quot;4&quot; SecureRegState=&quot;3&quot; VoiceConfigState=&quot;0&quot; MicEnabled=&quot;0&quot; AirPlayEnabled=&quot;1&quot; IdleState=&quot;1&quot; MoreInfo=&quot;&quot; SSLPort=&quot;1443&quot; HHSSLPort=&quot;1843&quot;/&gt;&lt;/ZoneGroup&gt;&lt;/ZoneGroups&gt;&lt;VanishedDevices&gt;&lt;/VanishedDevices&gt;&lt;/ZoneGroupState&gt;</ZoneGroupState></u:GetZoneGroupStateResponse></s:Body></s:Envelope>
+2023-03-25 14:43:19,989 services.py:495 - send_command() - Received status 200 from 192.168.1.134
+2023-03-25 14:43:19,990 zonegroupstate.py:266 - process_payload() - Updating ZGS with poll payload from 192.168.1.134 (1/1 processed)
+2023-03-25 14:43:19,998 core.py:372 - __init__() - Created SoCo instance for ip: 192.168.1.152
+2023-03-25 14:43:20,003 zonegroupstate.py:254 - update_cache() - Setting ZGS cache to 5s
+2023-03-25 14:43:20,004 utils.py:434 - cache_speakers() - Adding speakers to cache: {SoCo("192.168.1.134"), SoCo("192.168.1.152")}
+2023-03-25 14:43:20,006 zonegroupstate.py:138 - poll() - Cache still active (GetZoneGroupState) during poll for 192.168.1.134
+2023-03-25 14:43:20,006 services.py:220 - __getattr__() - Dispatching method GetHouseholdID
+2023-03-25 14:43:20,006 services.py:470 - send_command() - Request timeout set to 20.0
+2023-03-25 14:43:20,008 connectionpool.py:228 - _new_conn() - Starting new HTTP connection (1): 192.168.1.152:1400
+2023-03-25 14:43:20,014 connectionpool.py:456 - _make_request() - http://192.168.1.152:1400 "GET /xml/DeviceProperties1.xml HTTP/1.1" 200 21986
+2023-03-25 14:43:20,037 services.py:483 - send_command() - Sending GetHouseholdID [] to 192.168.1.152
+2023-03-25 14:43:20,038 services.py:484 - send_command() - Sending {'Content-Type': 'text/xml; charset="utf-8"', 'SOAPACTION': 'urn:schemas-upnp-org:service:DeviceProperties:1#GetHouseholdID'}, <?xml version="1.0" ?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+  <s:Body>
+    <u:GetHouseholdID xmlns:u="urn:schemas-upnp-org:service:DeviceProperties:1"/>
+  </s:Body>
+</s:Envelope>
+
+2023-03-25 14:43:20,040 connectionpool.py:228 - _new_conn() - Starting new HTTP connection (1): 192.168.1.152:1400
+2023-03-25 14:43:20,068 connectionpool.py:456 - _make_request() - http://192.168.1.152:1400 "POST /DeviceProperties/Control HTTP/1.1" 200 338
+2023-03-25 14:43:20,069 services.py:493 - send_command() - Received {'CONTENT-LENGTH': '338', 'CONTENT-TYPE': 'text/xml; charset="utf-8"', 'EXT': '', 'Server': 'Linux UPnP/1.0 Sonos/71.1-38240 (ZPS6)', 'Connection': 'close'}, <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:GetHouseholdIDResponse xmlns:u="urn:schemas-upnp-org:service:DeviceProperties:1"><CurrentHouseholdID>Sonos_T8I0ro5S4v5sOmByx9sj3flNXz</CurrentHouseholdID></u:GetHouseholdIDResponse></s:Body></s:Envelope>
+2023-03-25 14:43:20,070 services.py:495 - send_command() - Received status 200 from 192.168.1.152
+2023-03-25 14:43:20,070 zonegroupstate.py:138 - poll() - Cache still active (GetZoneGroupState) during poll for 192.168.1.152
+2023-03-25 14:43:20,077 match_speaker_names.py:18 - speaker_name_matches() - Found exact speaker name match for 'Kitchen'
+2023-03-25 14:43:20,077 utils.py:604 - get_speaker() - Successful speaker discovery
+2023-03-25 14:43:20,078 sonos.py:481 - main() - Invoking 'run_command' with '<SoCo object at ip 192.168.1.134> play_file ...'
+2023-03-25 14:43:20,078 zonegroupstate.py:138 - poll() - Cache still active (GetZoneGroupState) during poll for 192.168.1.134
+2023-03-25 14:43:20,089 play_local_file.py:216 - play_local_file() - Using server IP address: 192.168.1.114
+2023-03-25 14:43:20,089 zonegroupstate.py:138 - poll() - Cache still active (GetZoneGroupState) during poll for 192.168.1.134
+2023-03-25 14:43:20,103 play_local_file.py:111 - http_server() - Using 192.168.1.114:54000 for web server
+2023-03-25 14:43:20,107 play_local_file.py:114 - http_server() - Web server started
+2023-03-25 14:43:20,107 zonegroupstate.py:138 - poll() - Cache still active (GetZoneGroupState) during poll for 192.168.1.134
+2023-03-25 14:43:20,114 play_local_file.py:231 - play_local_file() - Stopping speaker 'Kitchen'
+2023-03-25 14:43:20,122 zonegroupstate.py:138 - poll() - Cache still active (GetZoneGroupState) during poll for 192.168.1.134
+2023-03-25 14:43:20,122 services.py:220 - __getattr__() - Dispatching method Stop
+2023-03-25 14:43:20,123 services.py:470 - send_command() - Request timeout set to 20.0
+2023-03-25 14:43:20,123 services.py:483 - send_command() - Sending Stop [('InstanceID', 0), ('Speed', 1)] to 192.168.1.134
+2023-03-25 14:43:20,123 services.py:484 - send_command() - Sending {'Content-Type': 'text/xml; charset="utf-8"', 'SOAPACTION': 'urn:schemas-upnp-org:service:AVTransport:1#Stop'}, <?xml version="1.0" ?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+  <s:Body>
+    <u:Stop xmlns:u="urn:schemas-upnp-org:service:AVTransport:1">
+      <InstanceID>0</InstanceID>
+      <Speed>1</Speed>
+    </u:Stop>
+  </s:Body>
+</s:Envelope>
+
+2023-03-25 14:43:20,125 connectionpool.py:228 - _new_conn() - Starting new HTTP connection (1): 192.168.1.134:1400
+2023-03-25 14:43:20,147 connectionpool.py:456 - _make_request() - http://192.168.1.134:1400 "POST /MediaRenderer/AVTransport/Control HTTP/1.1" 200 240
+2023-03-25 14:43:20,147 services.py:493 - send_command() - Received {'CONTENT-LENGTH': '240', 'CONTENT-TYPE': 'text/xml; charset="utf-8"', 'EXT': '', 'Server': 'Linux UPnP/1.0 Sonos/71.1-38240 (ZPS12)', 'Connection': 'close'}, <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:StopResponse xmlns:u="urn:schemas-upnp-org:service:AVTransport:1"></u:StopResponse></s:Body></s:Envelope>
+2023-03-25 14:43:20,152 services.py:495 - send_command() - Received status 200 from 192.168.1.134
+2023-03-25 14:43:20,155 play_local_file.py:236 - play_local_file() - Playing file 'Bagara - Live @ Radio Intense 23.12.2022 Melodic Techno & Progressive House DJ Mix 4K.mp3' from directory 'C:\Users\angel.iliev\Music'
+2023-03-25 14:43:20,161 play_local_file.py:237 - play_local_file() - Playback URI: http://192.168.1.114:54000/Bagara%20-%20Live%20%40%20Radio%20Intense%2023.12.2022%20Melodic%20Techno%20%26%20Progressive%20House%20DJ%20Mix%204K.mp3
+2023-03-25 14:43:20,162 zonegroupstate.py:138 - poll() - Cache still active (GetZoneGroupState) during poll for 192.168.1.134
+2023-03-25 14:43:20,163 play_local_file.py:239 - play_local_file() - Send URI to 'Kitchen' for playback
+2023-03-25 14:43:20,163 zonegroupstate.py:138 - poll() - Cache still active (GetZoneGroupState) during poll for 192.168.1.134
+2023-03-25 14:43:20,166 services.py:220 - __getattr__() - Dispatching method SetAVTransportURI
+2023-03-25 14:43:20,172 services.py:470 - send_command() - Request timeout set to 20.0
+2023-03-25 14:43:20,172 services.py:483 - send_command() - Sending SetAVTransportURI [('InstanceID', 0), ('CurrentURI', 'http://192.168.1.114:54000/Bagara%20-%20Live%20%40%20Radio%20Intense%2023.12.2022%20Melodic%20Techno%20%26%20Progressive%20House%20DJ%20Mix%204K.mp3'), ('CurrentURIMetaData', '')] to 192.168.1.134
+2023-03-25 14:43:20,173 services.py:484 - send_command() - Sending {'Content-Type': 'text/xml; charset="utf-8"', 'SOAPACTION': 'urn:schemas-upnp-org:service:AVTransport:1#SetAVTransportURI'}, <?xml version="1.0" ?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+  <s:Body>
+    <u:SetAVTransportURI xmlns:u="urn:schemas-upnp-org:service:AVTransport:1">
+      <InstanceID>0</InstanceID>
+      <CurrentURI>http://192.168.1.114:54000/Bagara%20-%20Live%20%40%20Radio%20Intense%2023.12.2022%20Melodic%20Techno%20%26%20Progressive%20House%20DJ%20Mix%204K.mp3</CurrentURI>
+      <CurrentURIMetaData/>
+    </u:SetAVTransportURI>
+  </s:Body>
+</s:Envelope>
+
+2023-03-25 14:43:20,174 connectionpool.py:228 - _new_conn() - Starting new HTTP connection (1): 192.168.1.134:1400
+2023-03-25 14:43:20,195 connectionpool.py:456 - _make_request() - http://192.168.1.134:1400 "POST /MediaRenderer/AVTransport/Control HTTP/1.1" 200 266
+2023-03-25 14:43:20,196 services.py:493 - send_command() - Received {'CONTENT-LENGTH': '266', 'CONTENT-TYPE': 'text/xml; charset="utf-8"', 'EXT': '', 'Server': 'Linux UPnP/1.0 Sonos/71.1-38240 (ZPS12)', 'Connection': 'close'}, <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:SetAVTransportURIResponse xmlns:u="urn:schemas-upnp-org:service:AVTransport:1"></u:SetAVTransportURIResponse></s:Body></s:Envelope>
+2023-03-25 14:43:20,199 services.py:495 - send_command() - Received status 200 from 192.168.1.134
+2023-03-25 14:43:20,205 zonegroupstate.py:138 - poll() - Cache still active (GetZoneGroupState) during poll for 192.168.1.134
+2023-03-25 14:43:20,205 services.py:220 - __getattr__() - Dispatching method Play
+2023-03-25 14:43:20,206 services.py:470 - send_command() - Request timeout set to 20.0
+2023-03-25 14:43:20,215 services.py:483 - send_command() - Sending Play [('InstanceID', 0), ('Speed', 1)] to 192.168.1.134
+2023-03-25 14:43:20,216 services.py:484 - send_command() - Sending {'Content-Type': 'text/xml; charset="utf-8"', 'SOAPACTION': 'urn:schemas-upnp-org:service:AVTransport:1#Play'}, <?xml version="1.0" ?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+  <s:Body>
+    <u:Play xmlns:u="urn:schemas-upnp-org:service:AVTransport:1">
+      <InstanceID>0</InstanceID>
+      <Speed>1</Speed>
+    </u:Play>
+  </s:Body>
+</s:Envelope>
+
+2023-03-25 14:43:20,217 connectionpool.py:228 - _new_conn() - Starting new HTTP connection (1): 192.168.1.134:1400
+2023-03-25 14:43:20,240 connectionpool.py:456 - _make_request() - http://192.168.1.134:1400 "POST /MediaRenderer/AVTransport/Control HTTP/1.1" 200 240
+2023-03-25 14:43:20,240 services.py:493 - send_command() - Received {'CONTENT-LENGTH': '240', 'CONTENT-TYPE': 'text/xml; charset="utf-8"', 'EXT': '', 'Server': 'Linux UPnP/1.0 Sonos/71.1-38240 (ZPS12)', 'Connection': 'close'}, <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:PlayResponse xmlns:u="urn:schemas-upnp-org:service:AVTransport:1"></u:PlayResponse></s:Body></s:Envelope>
+2023-03-25 14:43:20,242 services.py:495 - send_command() - Received status 200 from 192.168.1.134
+2023-03-25 14:43:20,255 play_local_file.py:242 - play_local_file() - Setting flag to stop playback on CTRL-C
+2023-03-25 14:43:20,255 play_local_file.py:65 - do_GET() - Get request received by HTTP server
+2023-03-25 14:43:20,257 zonegroupstate.py:138 - poll() - Cache still active (GetZoneGroupState) during poll for 192.168.1.134
+2023-03-25 14:43:20,264 utils.py:270 - set_speaker_playing_local_file() - Setting speaker playing local file to 'Kitchen'
+2023-03-25 14:43:20,265 play_local_file.py:245 - play_local_file() - Waiting 1s for playback to start
+2023-03-25 14:43:21,265 play_local_file.py:247 - play_local_file() - Waiting for playback to stop
+2023-03-25 14:43:21,265 play_local_file.py:144 - wait_until_stopped() - Playing states = ['PLAYING', 'TRANSITIONING', 'PAUSED_PLAYBACK']
+2023-03-25 14:43:21,273 events.py:148 - run() - Event listener running on ('192.168.1.114', 1400)
+2023-03-25 14:43:21,274 events_base.py:294 - start() - Event Listener started
+2023-03-25 14:43:21,275 connectionpool.py:228 - _new_conn() - Starting new HTTP connection (1): 192.168.1.134:1400
+2023-03-25 14:43:21,812 connectionpool.py:456 - _make_request() - http://192.168.1.134:1400 "SUBSCRIBE /MediaRenderer/AVTransport/Event HTTP/1.1" 200 None
+2023-03-25 14:43:21,813 events_base.py:441 - success() - Subscribed to http://192.168.1.134:1400/MediaRenderer/AVTransport/Event, sid: uuid:RINCON_949F3E7F9C5201400_sub0000000004
+2023-03-25 14:43:21,821 utils.py:862 - remember_event_sub() - Adding event subscription record: '<soco.events.Subscription object at 0x000001D0063ECD60>'
+2023-03-25 14:43:21,969 events.py:113 - log_event() - Event 0 received for AVTransport service on thread <Thread(Thread-5, started 1668)> at 1679748201.9691362
+2023-03-25 14:43:21,969 events_base.py:233 - handle_notification() - Event content: b'<e:propertyset xmlns:e="urn:schemas-upnp-org:event-1-0"><e:property><LastChange>&lt;Event xmlns=&quot;urn:schemas-upnp-org:metadata-1-0/AVT/&quot; xmlns:r=&quot;urn:schemas-rinconnetworks-com:metadata-1-0/&quot;&gt;&lt;InstanceID val=&quot;0&quot;&gt;&lt;TransportState val=&quot;PLAYING&quot;/&gt;&lt;CurrentPlayMode val=&quot;NORMAL&quot;/&gt;&lt;CurrentCrossfadeMode val=&quot;0&quot;/&gt;&lt;NumberOfTracks val=&quot;1&quot;/&gt;&lt;CurrentTrack val=&quot;1&quot;/&gt;&lt;CurrentSection val=&quot;0&quot;/&gt;&lt;CurrentTrackURI val=&quot;http://192.168.1.114:54000/Bagara%20-%20Live%20%40%20Radio%20Intense%2023.12.2022%20Melodic%20Techno%20%26%20Progressive%20House%20DJ%20Mix%204K.mp3&quot;/&gt;&lt;CurrentTrackDuration val=&quot;1:00:25&quot;/&gt;&lt;CurrentTrackMetaData val=&quot;&amp;lt;DIDL-Lite xmlns:dc=&amp;quot;http://purl.org/dc/elements/1.1/&amp;quot; xmlns:upnp=&amp;quot;urn:schemas-upnp-org:metadata-1-0/upnp/&amp;quot; xmlns:r=&amp;quot;urn:schemas-rinconnetworks-com:metadata-1-0/&amp;quot; xmlns=&amp;quot;urn:schemas-upnp-org:metadata-1-0/DIDL-Lite/&amp;quot;&amp;gt;&amp;lt;item id=&amp;quot;-1&amp;quot; parentID=&amp;quot;-1&amp;quot; restricted=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;res protocolInfo=&amp;quot;http-get:*:audio/mpeg:*&amp;quot; duration=&amp;quot;1:00:25&amp;quot;&amp;gt;http://192.168.1.114:54000/Bagara%20-%20Live%20%40%20Radio%20Intense%2023.12.2022%20Melodic%20Techno%20%26%20Progressive%20House%20DJ%20Mix%204K.mp3&amp;lt;/res&amp;gt;&amp;lt;r:streamContent&amp;gt;&amp;lt;/r:streamContent&amp;gt;&amp;lt;r:radioShowMd&amp;gt;&amp;lt;/r:radioShowMd&amp;gt;&amp;lt;r:streamInfo&amp;gt;bd:16,sr:44100,c:0,l:0,d:0&amp;lt;/r:streamInfo&amp;gt;&amp;lt;dc:title&amp;gt;Bagara - Live @ Radio Intense 23.12.2022 Melodic Techno &amp;amp;amp; Progressive House DJ Mix 4K.mp3&amp;lt;/dc:title&amp;gt;&amp;lt;upnp:class&amp;gt;object.item.audioItem.musicTrack&amp;lt;/upnp:class&amp;gt;&amp;lt;/item&amp;gt;&amp;lt;/DIDL-Lite&amp;gt;&quot;/&gt;&lt;r:NextTrackURI val=&quot;&quot;/&gt;&lt;r:NextTrackMetaData val=&quot;&quot;/&gt;&lt;r:EnqueuedTransportURI val=&quot;http://192.168.1.114:54000/Bagara%20-%20Live%20%40%20Radio%20Intense%2023.12.2022%20Melodic%20Techno%20%26%20Progressive%20House%20DJ%20Mix%204K.mp3&quot;/&gt;&lt;r:EnqueuedTransportURIMetaData val=&quot;&quot;/&gt;&lt;PlaybackStorageMedium val=&quot;NETWORK&quot;/&gt;&lt;AVTransportURI val=&quot;http://192.168.1.114:54000/Bagara%20-%20Live%20%40%20Radio%20Intense%2023.12.2022%20Melodic%20Techno%20%26%20Progressive%20House%20DJ%20Mix%204K.mp3&quot;/&gt;&lt;AVTransportURIMetaData val=&quot;&quot;/&gt;&lt;NextAVTransportURI val=&quot;&quot;/&gt;&lt;NextAVTransportURIMetaData val=&quot;&quot;/&gt;&lt;CurrentTransportActions val=&quot;Set, Stop, Pause, Play, X_DLNA_SeekTime, X_DLNA_SeekTrackNr&quot;/&gt;&lt;r:CurrentValidPlayModes val=&quot;CROSSFADE&quot;/&gt;&lt;r:DirectControlClientID val=&quot;&quot;/&gt;&lt;r:DirectControlIsSuspended val=&quot;0&quot;/&gt;&lt;r:DirectControlAccountID val=&quot;&quot;/&gt;&lt;TransportStatus val=&quot;OK&quot;/&gt;&lt;r:SleepTimerGeneration val=&quot;0&quot;/&gt;&lt;r:AlarmRunning val=&quot;0&quot;/&gt;&lt;r:SnoozeRunning val=&quot;0&quot;/&gt;&lt;r:RestartPending val=&quot;0&quot;/&gt;&lt;TransportPlaySpeed val=&quot;NOT_IMPLEMENTED&quot;/&gt;&lt;CurrentMediaDuration val=&quot;NOT_IMPLEMENTED&quot;/&gt;&lt;RecordStorageMedium val=&quot;NOT_IMPLEMENTED&quot;/&gt;&lt;PossiblePlaybackStorageMedia val=&quot;NONE, NETWORK&quot;/&gt;&lt;PossibleRecordStorageMedia val=&quot;NOT_IMPLEMENTED&quot;/&gt;&lt;RecordMediumWriteStatus val=&quot;NOT_IMPLEMENTED&quot;/&gt;&lt;CurrentRecordQualityMode val=&quot;NOT_IMPLEMENTED&quot;/&gt;&lt;PossibleRecordQualityModes val=&quot;NOT_IMPLEMENTED&quot;/&gt;&lt;/InstanceID&gt;&lt;/Event&gt;</LastChange></e:property></e:propertyset>'
+2023-03-25 14:43:21,971 data_structures_entry.py:44 - from_didl_string() - Created data structures: [<DidlMusicTrack 'b' (CUT) from Didl string "<DIDL-Lite xmlns:dc=" (CUT)
+2023-03-25 14:43:21,977 events.py:123 - log_message() - "NOTIFY / HTTP/1.1" 200 -
+2023-03-25 14:43:21,977 play_local_file.py:157 - wait_until_stopped() - Event received: playback state = 'PLAYING'
+2023-03-25 14:43:26,982 utils.py:279 - sig_handler() - Caught signal: 2
+2023-03-25 14:43:26,982 services.py:470 - send_command() - Request timeout set to 20.0
+2023-03-25 14:43:26,984 services.py:483 - send_command() - Sending GetZoneGroupState [] to 192.168.1.134
+2023-03-25 14:43:26,991 services.py:484 - send_command() - Sending {'Content-Type': 'text/xml; charset="utf-8"', 'SOAPACTION': 'urn:schemas-upnp-org:service:ZoneGroupTopology:1#GetZoneGroupState'}, <?xml version="1.0" ?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+  <s:Body>
+    <u:GetZoneGroupState xmlns:u="urn:schemas-upnp-org:service:ZoneGroupTopology:1"/>
+  </s:Body>
+</s:Envelope>
+
+2023-03-25 14:43:26,992 connectionpool.py:228 - _new_conn() - Starting new HTTP connection (1): 192.168.1.134:1400
+2023-03-25 14:43:28,157 connectionpool.py:456 - _make_request() - http://192.168.1.134:1400 "POST /ZoneGroupTopology/Control HTTP/1.1" 200 2546
+2023-03-25 14:43:28,180 services.py:493 - send_command() - Received {'CONTENT-LENGTH': '2546', 'CONTENT-TYPE': 'text/xml; charset="utf-8"', 'EXT': '', 'Server': 'Linux UPnP/1.0 Sonos/71.1-38240 (ZPS12)', 'Connection': 'close'}, <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:GetZoneGroupStateResponse xmlns:u="urn:schemas-upnp-org:service:ZoneGroupTopology:1"><ZoneGroupState>&lt;ZoneGroupState&gt;&lt;ZoneGroups&gt;&lt;ZoneGroup Coordinator=&quot;RINCON_949F3E7F9C5201400&quot; ID=&quot;RINCON_949F3E7F9C5201400:2286320319&quot;&gt;&lt;ZoneGroupMember UUID=&quot;RINCON_949F3E7F9C5201400&quot; Location=&quot;http://192.168.1.134:1400/xml/device_description.xml&quot; ZoneName=&quot;Kitchen&quot; Icon=&quot;x-rincon-roomicon:kitchen&quot; Configuration=&quot;1&quot; SoftwareVersion=&quot;71.1-38240&quot; SWGen=&quot;2&quot; MinCompatibleVersion=&quot;70.0-00000&quot; LegacyCompatibleVersion=&quot;58.0-00000&quot; BootSeq=&quot;159&quot; TVConfigurationError=&quot;0&quot; HdmiCecAvailable=&quot;0&quot; WirelessMode=&quot;1&quot; WirelessLeafOnly=&quot;0&quot; ChannelFreq=&quot;2412&quot; BehindWifiExtender=&quot;0&quot; WifiEnabled=&quot;1&quot; EthLink=&quot;0&quot; Orientation=&quot;0&quot; RoomCalibrationState=&quot;4&quot; SecureRegState=&quot;3&quot; VoiceConfigState=&quot;0&quot; MicEnabled=&quot;0&quot; AirPlayEnabled=&quot;0&quot; IdleState=&quot;0&quot; MoreInfo=&quot;&quot; SSLPort=&quot;1443&quot; HHSSLPort=&quot;1843&quot;/&gt;&lt;/ZoneGroup&gt;&lt;ZoneGroup Coordinator=&quot;RINCON_5CAAFDFA79DC01400&quot; ID=&quot;RINCON_5CAAFDFA79DC01400:67127424&quot;&gt;&lt;ZoneGroupMember UUID=&quot;RINCON_5CAAFDFA79DC01400&quot; Location=&quot;http://192.168.1.152:1400/xml/device_description.xml&quot; ZoneName=&quot;Living room&quot; Icon=&quot;x-rincon-roomicon:living&quot; Configuration=&quot;1&quot; SoftwareVersion=&quot;71.1-38240&quot; SWGen=&quot;2&quot; MinCompatibleVersion=&quot;70.0-00000&quot; LegacyCompatibleVersion=&quot;58.0-00000&quot; BootSeq=&quot;99&quot; TVConfigurationError=&quot;0&quot; HdmiCecAvailable=&quot;0&quot; WirelessMode=&quot;1&quot; WirelessLeafOnly=&quot;0&quot; ChannelFreq=&quot;2412&quot; BehindWifiExtender=&quot;0&quot; WifiEnabled=&quot;1&quot; EthLink=&quot;0&quot; Orientation=&quot;0&quot; RoomCalibrationState=&quot;4&quot; SecureRegState=&quot;3&quot; VoiceConfigState=&quot;0&quot; MicEnabled=&quot;0&quot; AirPlayEnabled=&quot;1&quot; IdleState=&quot;1&quot; MoreInfo=&quot;&quot; SSLPort=&quot;1443&quot; HHSSLPort=&quot;1843&quot;/&gt;&lt;/ZoneGroup&gt;&lt;/ZoneGroups&gt;&lt;VanishedDevices&gt;&lt;/VanishedDevices&gt;&lt;/ZoneGroupState&gt;</ZoneGroupState></u:GetZoneGroupStateResponse></s:Body></s:Envelope>
+2023-03-25 14:43:28,181 services.py:495 - send_command() - Received status 200 from 192.168.1.134
+2023-03-25 14:43:28,188 zonegroupstate.py:266 - process_payload() - Updating ZGS with poll payload from 192.168.1.134 (2/12 processed)
+2023-03-25 14:43:28,190 zonegroupstate.py:254 - update_cache() - Setting ZGS cache to 5s
+2023-03-25 14:43:28,190 utils.py:314 - sig_handler() - Speaker 'Kitchen': 'play_file' active ... stopping
+2023-03-25 14:43:28,191 zonegroupstate.py:138 - poll() - Cache still active (GetZoneGroupState) during poll for 192.168.1.134
+2023-03-25 14:43:28,191 services.py:470 - send_command() - Request timeout set to 20.0
+2023-03-25 14:43:28,192 services.py:483 - send_command() - Sending Stop [('InstanceID', 0), ('Speed', 1)] to 192.168.1.134
+2023-03-25 14:43:28,192 services.py:484 - send_command() - Sending {'Content-Type': 'text/xml; charset="utf-8"', 'SOAPACTION': 'urn:schemas-upnp-org:service:AVTransport:1#Stop'}, <?xml version="1.0" ?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+  <s:Body>
+    <u:Stop xmlns:u="urn:schemas-upnp-org:service:AVTransport:1">
+      <InstanceID>0</InstanceID>
+      <Speed>1</Speed>
+    </u:Stop>
+  </s:Body>
+</s:Envelope>
+
+2023-03-25 14:43:28,194 connectionpool.py:228 - _new_conn() - Starting new HTTP connection (1): 192.168.1.134:1400
+2023-03-25 14:43:29,056 play_local_file.py:87 - do_GET() - Exception ignored: [WinError 10054] An existing connection was forcibly closed by the remote host
+2023-03-25 14:43:29,078 connectionpool.py:456 - _make_request() - http://192.168.1.134:1400 "POST /MediaRenderer/AVTransport/Control HTTP/1.1" 200 240
+2023-03-25 14:43:29,079 services.py:493 - send_command() - Received {'CONTENT-LENGTH': '240', 'CONTENT-TYPE': 'text/xml; charset="utf-8"', 'EXT': '', 'Server': 'Linux UPnP/1.0 Sonos/71.1-38240 (ZPS12)', 'Connection': 'close'}, <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" s:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><s:Body><u:StopResponse xmlns:u="urn:schemas-upnp-org:service:AVTransport:1"></u:StopResponse></s:Body></s:Envelope>
+2023-03-25 14:43:29,081 services.py:495 - send_command() - Received status 200 from 192.168.1.134
+2023-03-25 14:43:29,088 utils.py:321 - sig_handler() - Unsubscribing from event notifications
+2023-03-25 14:43:29,088 utils.py:29 - event_unsubscribe() - Unsubscribing '<soco.events.Subscription object at 0x000001D0063ECD60>'
+2023-03-25 14:43:29,219 events.py:113 - log_event() - Event 1 received for AVTransport service on thread <Thread(Thread-6, started 10724)> at 1679748209.219626
+2023-03-25 14:43:29,219 events_base.py:233 - handle_notification() - Event content: b'<e:propertyset xmlns:e="urn:schemas-upnp-org:event-1-0"><e:property><LastChange>&lt;Event xmlns=&quot;urn:schemas-upnp-org:metadata-1-0/AVT/&quot; xmlns:r=&quot;urn:schemas-rinconnetworks-com:metadata-1-0/&quot;&gt;&lt;InstanceID val=&quot;0&quot;&gt;&lt;TransportState val=&quot;STOPPED&quot;/&gt;&lt;CurrentPlayMode val=&quot;NORMAL&quot;/&gt;&lt;CurrentCrossfadeMode val=&quot;0&quot;/&gt;&lt;NumberOfTracks val=&quot;1&quot;/&gt;&lt;CurrentTrack val=&quot;1&quot;/&gt;&lt;CurrentSection val=&quot;0&quot;/&gt;&lt;CurrentTrackURI val=&quot;http://192.168.1.114:54000/Bagara%20-%20Live%20%40%20Radio%20Intense%2023.12.2022%20Melodic%20Techno%20%26%20Progressive%20House%20DJ%20Mix%204K.mp3&quot;/&gt;&lt;CurrentTrackDuration val=&quot;1:00:25&quot;/&gt;&lt;CurrentTrackMetaData val=&quot;&amp;lt;DIDL-Lite xmlns:dc=&amp;quot;http://purl.org/dc/elements/1.1/&amp;quot; xmlns:upnp=&amp;quot;urn:schemas-upnp-org:metadata-1-0/upnp/&amp;quot; xmlns:r=&amp;quot;urn:schemas-rinconnetworks-com:metadata-1-0/&amp;quot; xmlns=&amp;quot;urn:schemas-upnp-org:metadata-1-0/DIDL-Lite/&amp;quot;&amp;gt;&amp;lt;item id=&amp;quot;-1&amp;quot; parentID=&amp;quot;-1&amp;quot; restricted=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;res protocolInfo=&amp;quot;http-get:*:audio/mpeg:*&amp;quot; duration=&amp;quot;1:00:25&amp;quot;&amp;gt;http://192.168.1.114:54000/Bagara%20-%20Live%20%40%20Radio%20Intense%2023.12.2022%20Melodic%20Techno%20%26%20Progressive%20House%20DJ%20Mix%204K.mp3&amp;lt;/res&amp;gt;&amp;lt;r:streamContent&amp;gt;&amp;lt;/r:streamContent&amp;gt;&amp;lt;r:radioShowMd&amp;gt;&amp;lt;/r:radioShowMd&amp;gt;&amp;lt;r:streamInfo&amp;gt;bd:0,sr:0,c:0,l:0,d:0&amp;lt;/r:streamInfo&amp;gt;&amp;lt;dc:title&amp;gt;Bagara - Live @ Radio Intense 23.12.2022 Melodic Techno &amp;amp;amp; Progressive House DJ Mix 4K.mp3&amp;lt;/dc:title&amp;gt;&amp;lt;upnp:class&amp;gt;object.item.audioItem.musicTrack&amp;lt;/upnp:class&amp;gt;&amp;lt;/item&amp;gt;&amp;lt;/DIDL-Lite&amp;gt;&quot;/&gt;&lt;r:NextTrackURI val=&quot;&quot;/&gt;&lt;r:NextTrackMetaData val=&quot;&quot;/&gt;&lt;r:EnqueuedTransportURI val=&quot;http://192.168.1.114:54000/Bagara%20-%20Live%20%40%20Radio%20Intense%2023.12.2022%20Melodic%20Techno%20%26%20Progressive%20House%20DJ%20Mix%204K.mp3&quot;/&gt;&lt;r:EnqueuedTransportURIMetaData val=&quot;&quot;/&gt;&lt;/InstanceID&gt;&lt;/Event&gt;</LastChange></e:property></e:propertyset>'
+2023-03-25 14:43:29,227 data_structures_entry.py:44 - from_didl_string() - Created data structures: [<DidlMusicTrack 'b' (CUT) from Didl string "<DIDL-Lite xmlns:dc=" (CUT)
+2023-03-25 14:43:29,228 events.py:123 - log_message() - "NOTIFY / HTTP/1.1" 200 -
+2023-03-25 14:43:29,290 connectionpool.py:228 - _new_conn() - Starting new HTTP connection (1): 192.168.1.134:1400
+2023-03-25 14:43:29,300 connectionpool.py:456 - _make_request() - http://192.168.1.134:1400 "UNSUBSCRIBE /MediaRenderer/AVTransport/Event HTTP/1.1" 200 None
+2023-03-25 14:43:29,302 events_base.py:557 - success() - Unsubscribed from http://192.168.1.134:1400/MediaRenderer/AVTransport/Event, sid: uuid:RINCON_949F3E7F9C5201400_sub0000000004
+2023-03-25 14:43:29,315 events.py:123 - log_message() - code 501, message Unsupported method ('GET')
+2023-03-25 14:43:29,316 events.py:123 - log_message() - "GET / HTTP/1.1" 501 -
+2023-03-25 14:43:29,316 events_base.py:302 - stop() - Event Listener stopped
+2023-03-25 14:43:29,325 utils.py:35 - event_unsubscribe() - Unsubscribed
+2023-03-25 14:43:29,325 utils.py:324 - sig_handler() - Exiting program using 'os._exit(0)'
